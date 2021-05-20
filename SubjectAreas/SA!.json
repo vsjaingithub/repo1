@@ -1,6 +1,7 @@
 {
   "subjectArea" : {
     "name" : "SA!",
+    "description" : "asdasdasdasd",
     "sourceBusinessModel" : "businessModel:BM1",
     "tableOrder" : [ {
       "name" : "presentationTable:SA!.SAMP_REVENUE_F"
