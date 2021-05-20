@@ -1,0 +1,15 @@
+{
+  "subjectArea" : {
+    "name" : "SA!",
+    "sourceBusinessModel" : "businessModel:BM1",
+    "tableOrder" : [ {
+      "name" : "presentationTable:SA!.SAMP_REVENUE_F"
+    }, {
+      "name" : "presentationTable:SA!.SAMP_CUSTOMERS_D"
+    }, {
+      "name" : "presentationTable:SA!.SAMP_OFFICES_D"
+    }, {
+      "name" : "presentationTable:SA!.SAMP_PRODUCTS_D"
+    } ]
+  }
+}

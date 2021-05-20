@@ -1,0 +1,55 @@
+{
+  "database" : {
+    "name" : "MyDatabase",
+    "databaseType" : "ORACLE_12C",
+    "connectionPools" : [ {
+      "name" : "New Connection Pool_1",
+      "connection" : "'semanticmodel'.'DEMO'",
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeout" : 5,
+      "connectionTimeoutUnit" : "MINUTES",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "isolationLevel" : "default",
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10240,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false,
+    "joins" : [ {
+      "name" : "SAMP_REVENUE_F-SAMP_CUSTOMERS_D",
+      "leftTable" : "physicalTable:MyDatabase.SAMP_REVENUE_F",
+      "rightTable" : "physicalTable:MyDatabase.SAMP_CUSTOMERS_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.SAMP_REVENUE_F.CUST_KEY",
+        "rightColumn" : "physicalColumn:MyDatabase.SAMP_CUSTOMERS_D.CUST_KEY"
+      } ]
+    }, {
+      "name" : "SAMP_REVENUE_F-SAMP_OFFICES_D",
+      "leftTable" : "physicalTable:MyDatabase.SAMP_REVENUE_F",
+      "rightTable" : "physicalTable:MyDatabase.SAMP_OFFICES_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.SAMP_REVENUE_F.OFFICE_KEY",
+        "rightColumn" : "physicalColumn:MyDatabase.SAMP_OFFICES_D.OFFICE_KEY"
+      } ]
+    }, {
+      "name" : "SAMP_REVENUE_F-SAMP_PRODUCTS_D",
+      "leftTable" : "physicalTable:MyDatabase.SAMP_REVENUE_F",
+      "rightTable" : "physicalTable:MyDatabase.SAMP_PRODUCTS_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.SAMP_REVENUE_F.PROD_KEY",
+        "rightColumn" : "physicalColumn:MyDatabase.SAMP_PRODUCTS_D.PROD_KEY"
+      } ]
+    } ]
+  }
+}

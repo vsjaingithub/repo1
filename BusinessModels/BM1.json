@@ -1,0 +1,28 @@
+{
+  "businessModel" : {
+    "name" : "BM1",
+    "disable" : false,
+    "joins" : [ {
+      "name" : "NewJoin_1",
+      "leftTable" : "logicalTable:BM1.SAMP_REVENUE_F",
+      "rightTable" : "logicalTable:BM1.SAMP_CUSTOMERS_D",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "name" : "NewJoin_2",
+      "leftTable" : "logicalTable:BM1.SAMP_REVENUE_F",
+      "rightTable" : "logicalTable:BM1.SAMP_OFFICES_D",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "name" : "NewJoin_3",
+      "leftTable" : "logicalTable:BM1.SAMP_REVENUE_F",
+      "rightTable" : "logicalTable:BM1.SAMP_PRODUCTS_D",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

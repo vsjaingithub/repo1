@@ -1,0 +1,42 @@
+{
+  "presentationTable" : {
+    "name" : "SAMP_OFFICES_D",
+    "presentationColumns" : [ {
+      "name" : "OFFICE_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.OFFICE_KEY"
+    }, {
+      "name" : "OFFICE_DSC",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.OFFICE_DSC"
+    }, {
+      "name" : "COMPANY",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.COMPANY"
+    }, {
+      "name" : "ORGANIZATION",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.ORGANIZATION"
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.DEPARTMENT"
+    }, {
+      "name" : "SEQUENCE",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.SEQUENCE"
+    }, {
+      "name" : "COMPANY_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.COMPANY_KEY"
+    }, {
+      "name" : "ORG_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.ORG_KEY"
+    }, {
+      "name" : "DEPT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.DEPT_KEY"
+    }, {
+      "name" : "ADDRESS_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.ADDRESS_KEY"
+    }, {
+      "name" : "TOTAL_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.TOTAL_VALUE"
+    }, {
+      "name" : "REGION",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SAMP_OFFICES_D.REGION"
+    } ]
+  }
+}
